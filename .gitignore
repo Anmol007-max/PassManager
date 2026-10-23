@@ -1,0 +1,41 @@
+# Environment secrets & keys
+.env
+*.pem
+*.key
+*.jks
+*.keystore
+
+# Markdown documentation files
+*.md
+**/*.md
+
+# Maven & Java
+target/
+*.jar
+*.war
+*.class
+.mvn/
+data/
+
+# Node & Frontend
+node_modules/
+dist/
+.tmp/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Local Tools
+tools/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MyPassWords</string>
+    <string name="title_activity_main">MyPassWords</string>
+    <string name="package_name">com.passmanager.app</string>
+    <string name="custom_url_scheme">com.passmanager.app</string>
+</resources>

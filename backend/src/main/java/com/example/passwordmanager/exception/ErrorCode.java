@@ -1,0 +1,16 @@
+package com.example.passwordmanager.exception;
+
+public enum ErrorCode {
+    VALIDATION_FAILED,
+    INVALID_CREDENTIALS,
+    INVALID_REFRESH,
+    EMAIL_TAKEN,
+    ENTRY_EXISTS,
+    ENTRY_NOT_FOUND,
+    REVISION_CONFLICT,
+    VAULT_LIMIT_REACHED,
+    RATE_LIMITED,
+    UNAUTHORIZED,
+    BAD_REQUEST,
+    INTERNAL_ERROR
+}

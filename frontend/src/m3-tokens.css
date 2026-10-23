@@ -1,0 +1,193 @@
+/**
+ * Material Design 3 (Material You) Design Tokens
+ * Google-centric design system for MyPassWords
+ */
+
+:root,
+[data-theme="light"] {
+  /* Primary */
+  --primary: #0B57D0;
+  --on-primary: #FFFFFF;
+  --primary-container: #D3E3FD;
+  --on-primary-container: #041E49;
+
+  /* Secondary */
+  --secondary: #00639B;
+  --on-secondary: #FFFFFF;
+  --secondary-container: #C2E7FF;
+  --on-secondary-container: #001D35;
+
+  /* Tertiary */
+  --tertiary: #526070;
+  --on-tertiary: #FFFFFF;
+  --tertiary-container: #D6E4F7;
+  --on-tertiary-container: #0E1D2A;
+
+  /* Surface & Containers */
+  --surface: #FDFBFF;
+  --surface-dim: #D9D9E0;
+  --surface-bright: #FDFBFF;
+  --surface-container-lowest: #FFFFFF;
+  --surface-container-low: #F7F2FA;
+  --surface-container: #F3EDF7;
+  --surface-container-high: #ECE6F0;
+  --surface-container-highest: #E6E0E9;
+
+  /* On Surface */
+  --on-surface: #1A1C1E;
+  --on-surface-variant: #444746;
+  --on-surface-rgb: 26, 28, 30;
+
+  /* Outlines */
+  --outline: #747775;
+  --outline-variant: #C4C7C5;
+
+  /* Status Colors */
+  --error: #B3261E;
+  --on-error: #FFFFFF;
+  --error-container: #F9DEDC;
+  --on-error-container: #410E0B;
+
+  --warning: #E29800;
+  --on-warning: #FFFFFF;
+  --warning-container: #FFE082;
+  --on-warning-container: #261900;
+
+  --success: #1E8E3E;
+  --on-success: #FFFFFF;
+  --success-container: #C4EED0;
+  --on-success-container: #00210E;
+
+  /* Legacy Bridge (for gradual backward compatibility) */
+  --bg: var(--surface);
+  --bg-grouped: var(--surface-container-low);
+  --text: var(--on-surface);
+  --text-secondary: var(--on-surface-variant);
+  --separator: var(--outline-variant);
+  --accent: var(--primary);
+  --danger: var(--error);
+
+  /* Elevation Shadows */
+  --elevation-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+  --elevation-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+  --elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
+}
+
+[data-theme="dark"] {
+  /* Primary */
+  --primary: #A8C7FA;
+  --on-primary: #062E6F;
+  --primary-container: #0842A0;
+  --on-primary-container: #D3E3FD;
+
+  /* Secondary */
+  --secondary: #7CDBFF;
+  --on-secondary: #003554;
+  --secondary-container: #004D74;
+  --on-secondary-container: #C2E7FF;
+
+  /* Tertiary */
+  --tertiary: #BAC8DB;
+  --on-tertiary: #243240;
+  --tertiary-container: #3B4857;
+  --on-tertiary-container: #D6E4F7;
+
+  /* Surface & Containers */
+  --surface: #111318;
+  --surface-dim: #111318;
+  --surface-bright: #37393E;
+  --surface-container-lowest: #0C0E13;
+  --surface-container-low: #1D1B20;
+  --surface-container: #211F26;
+  --surface-container-high: #2B2930;
+  --surface-container-highest: #36343B;
+
+  /* On Surface */
+  --on-surface: #E2E2E6;
+  --on-surface-variant: #C4C7C5;
+  --on-surface-rgb: 226, 226, 230;
+
+  /* Outlines */
+  --outline: #8E918F;
+  --outline-variant: #444746;
+
+  /* Status Colors */
+  --error: #F2B8B5;
+  --on-error: #601410;
+  --error-container: #8C1D18;
+  --on-error-container: #F9DEDC;
+
+  --warning: #F9AB00;
+  --on-warning: #3E2000;
+  --warning-container: #633600;
+  --on-warning-container: #FFE082;
+
+  --success: #6DD58C;
+  --on-success: #003914;
+  --success-container: #005320;
+  --on-success-container: #C4EED0;
+
+  /* Legacy Bridge */
+  --bg: var(--surface);
+  --bg-grouped: var(--surface-container-low);
+  --text: var(--on-surface);
+  --text-secondary: var(--on-surface-variant);
+  --separator: var(--outline-variant);
+  --accent: var(--primary);
+  --danger: var(--error);
+
+  /* Elevation Shadows */
+  --elevation-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.45), 0px 1px 2px 0px rgba(0, 0, 0, 0.60);
+  --elevation-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.45), 0px 1px 2px 0px rgba(0, 0, 0, 0.60);
+  --elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.45), 0px 1px 3px 0px rgba(0, 0, 0, 0.60);
+}
+
+:root {
+  /* Shapes & Radii per Google Material 3 */
+  --radius-full: 9999px;        /* Pill buttons, search dock, FAB */
+  --radius-sheet: 28px;         /* Bottom sheets, dialogs */
+  --radius-dialog: 28px;
+  --radius-modal: 28px;
+  --radius-card: 20px;          /* Cards & grouped containers */
+  --radius-list: 16px;          /* List items */
+  --radius-control: 9999px;     /* Buttons */
+  --radius-input: 12px;         /* Outlined / filled text fields */
+  --radius-chip: 8px;           /* Filter chips */
+  --radius-avatar: 9999px;      /* Monogram circles */
+
+  /* Typography */
+  --font-headline: 'Outfit', 'Google Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, Menlo, monospace;
+  --font-sans: var(--font-body);
+
+  /* Layout */
+  --max-content-width: 840px;
+
+  /* Safe Area / Insets */
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+
+  /* Interactive States */
+  --state-hover-overlay: rgba(var(--on-surface-rgb), 0.08);
+  --state-focus-overlay: rgba(var(--on-surface-rgb), 0.12);
+  --state-pressed-overlay: rgba(var(--on-surface-rgb), 0.12);
+}
+
+/* Material Symbols Rounded icon utility */
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}

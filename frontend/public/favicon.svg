@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a237e"/>
+      <stop offset="100%" stop-color="#00bcd4"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield -->
+  <path d="M32 2 L4 14 L4 30 C4 46 16 58 32 62 C48 58 60 46 60 30 L60 14 Z" 
+        fill="none" stroke="url(#g)" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Lock body -->
+  <rect x="21" y="30" width="22" height="16" rx="3" fill="url(#g)"/>
+  <!-- Lock shackle -->
+  <path d="M24 30 L24 24 C24 18 28 14 32 14 C36 14 40 18 40 24 L40 30" 
+        fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Keyhole -->
+  <circle cx="32" cy="37" r="3" fill="white"/>
+  <rect x="31" y="38" width="2" height="5" rx="1" fill="white"/>
+</svg>
